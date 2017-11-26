@@ -1,6 +1,9 @@
 // routes/index.js
 const noteRoutes = require('./note_routes');
+const userRoutes = require('./user_routes');
 module.exports = function(app, db) {
+  console.log(app);
   noteRoutes(app, db);
+  userRoutes(app, db);
   // Тут, позже, будут и другие обработчики маршрутов 
 };
